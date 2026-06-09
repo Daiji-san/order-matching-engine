@@ -1,16 +1,20 @@
 # Order-Matching-Engine
 A high-performance, O(1) Central Limit Order Book (CLOB) matching engine core implemented in Python with strict price-time priority.
 
-# High-Performance HFT Matching Engine Core
+# High-Performance CLOB Matching Engine Core
 
 A lightweight, optimized Central Limit Order Book (CLOB) matching engine core implemented in Python. This project simulates a live financial exchange executing trades with strict **Price-Time Priority (FIFO)**.
+
+> ⚠️ **Disclaimer & Educational Scope**
+> This project is designed strictly as a conceptual prototype for educational study and algorithmic analysis. It is **not** a production-grade, ultra-low-latency High-Frequency Trading (HFT) engine. Production HFT systems require sub-microsecond execution speeds and bare-metal memory management, making compiled languages like C++, C, or Rust the industry standard. 
+> 
+> The purpose of this repository is to demonstrate how to architect complex financial data workflows, master multi-layered nested state manipulation, and optimize data traversal using algorithmic shortcuts in Python.
 
 ## 🛠️ Tech Stack & Key Concepts Used
 * **Python 3.x**: Core programming language.
 * **Nested Hash-Maps (Dictionaries)**: Used to achieve $O(1)$ direct-path memory lookups for order book depth.
 * **Dynamic Key Snapping**: Utilized built-in `min()` and `max()` functions to target critical market execution points instantly without traversing data.
 * **Control Flow Automation**: Implemented a dynamic `while` loop architecture bound to state-driven `if/elif/else` blocks to automate multi-stage order execution.
-
 ---
 
 ## 🏗️ Architecture & Data Structure Design
